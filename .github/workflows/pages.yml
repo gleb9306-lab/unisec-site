@@ -22,6 +22,7 @@ jobs:
         run: |
           mkdir -p public
           for part in site-v14-part-*.zip; do unzip -q "$part" -d public; done
+          unzip -oq site-v14-final.zip -d public
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
