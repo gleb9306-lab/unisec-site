@@ -26,6 +26,7 @@ jobs:
           unzip -oq site-v15-final.zip -d public
           unzip -oq site-v15-fixes.zip -d public
           unzip -oq site-v15-count.zip -d public
+          unzip -oq site-v15-pages.zip -d public
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
