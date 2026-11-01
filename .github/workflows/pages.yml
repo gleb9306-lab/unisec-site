@@ -21,7 +21,7 @@ jobs:
       - name: Assemble static website
         run: |
           mkdir -p public
-          for part in site-part-*.zip; do unzip -q "$part" -d public; done
+          for part in site-v14-part-*.zip; do unzip -q "$part" -d public; done
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
