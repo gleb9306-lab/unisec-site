@@ -33,6 +33,7 @@ jobs:
           unzip -oq site-v19.zip -d public
           unzip -oq site-v20-update.zip -d public
           unzip -oq site-v21-update.zip -d public
+          unzip -oq site-v22-update.zip -d public
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -41,5 +42,6 @@ jobs:
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
+
 
 
