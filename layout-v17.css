@@ -1,0 +1,70 @@
+/* The opening photograph and the benefits strip share the first screen. */
+.vip-leather .hero.container {
+  min-height: max(560px, calc(100svh - 94px));
+}
+.vip-leather .trust-bar .trust-grid {
+  min-height: 94px;
+  padding-block: 14px;
+  align-content: center;
+}
+.vip-leather .hero.container::before {
+  background: linear-gradient(90deg, rgba(7, 29, 33, .94) 0%, rgba(7, 29, 33, .79) 34%, rgba(7, 29, 33, .36) 68%, rgba(7, 29, 33, .12) 100%);
+}
+.vip-leather .hero .hero-copy {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+.vip-leather .hero .hero-copy h1,
+.vip-leather .hero .hero-copy .hero-text,
+.vip-leather .hero .hero-copy .eyebrow,
+.vip-leather .hero .hero-copy .trust-note { text-shadow: 0 2px 14px rgba(0, 18, 20, .7); }
+
+/* Delineate the statistics from the light benefits section above. */
+.vip-leather main > .numbers::before {
+  content: '';
+  display: block;
+  height: clamp(46px, 5vw, 68px);
+  border-top: 1px solid rgba(145, 209, 214, .28);
+  border-bottom: 1px solid rgba(145, 209, 214, .2);
+  background: linear-gradient(90deg, transparent, rgba(134,211,217,.5), transparent) center / min(54vw, 640px) 1px no-repeat, #103138;
+}
+
+/* The final call to action uses the section's own dark background. */
+.vip-leather .final-inner > div:first-child {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Keep the FAQ heading on a light surface with dark, readable text. */
+.vip-leather .faq-v14 > .section-head {
+  background: #f8fbfa;
+  border: 1px solid #bdd5d2;
+  box-shadow: 0 12px 32px rgba(30, 70, 70, .06);
+}
+.vip-leather .faq-v14 > .section-head h2 { color: #16353a; }
+.vip-leather .faq-v14 > .section-head h2 em { color: #327e86; }
+.vip-leather .faq-v14 > .section-head .eyebrow { color: #337c84; }
+.vip-leather .faq-v14 > .section-head .section-intro { color: #426266; }
+
+@media (max-width: 900px) {
+  .vip-leather .hero.container { min-height: max(500px, calc(100svh - 132px)); }
+  .vip-leather .trust-bar .trust-grid { min-height: 132px; }
+  .vip-leather .hero.container::before { background: linear-gradient(90deg, rgba(7,29,33,.91), rgba(7,29,33,.60) 68%, rgba(7,29,33,.40)); }
+}
+@media (max-width: 640px) {
+  .vip-leather .hero .hero-copy { padding: 0; background: transparent; }
+  .vip-leather .hero.container { min-height: calc(100svh - 152px); }
+  .vip-leather .final-inner > div:first-child { padding: 0; }
+  .vip-leather main > .numbers::before { height: 42px; }
+}
+@media (max-width: 359px) {
+  .vip-leather .hero.container { min-height: calc(100svh - 200px); }
+  .vip-leather .trust-bar .trust-grid { min-height: 200px; }
+}

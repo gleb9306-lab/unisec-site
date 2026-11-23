@@ -1,0 +1,38 @@
+/* Factory, strengths and the journey of an item: dark and light surfaces in UNISEC colours. */
+#about.factory{background:#eaf1f0;color:#122d31;border-radius:28px;padding:clamp(24px,4vw,56px);gap:clamp(30px,5vw,70px);align-items:center;overflow:hidden}
+#about .factory-v14-visual{min-width:0;border-radius:18px;overflow:hidden;background:#dce8e6}
+#about .factory-v14-visual img{display:block;width:100%;height:auto}
+#about .factory-v14-copy{min-width:0}
+#about .factory-v14-copy .eyebrow{color:#357781}
+#about .factory-v14-copy h2{font-size:clamp(38px,4.5vw,64px);line-height:1.04;color:#102b30;margin:0 0 22px}
+#about .factory-v14-copy h2 em{color:#36828a}
+#about .factory-v14-copy h3{font-size:clamp(23px,2.3vw,32px);line-height:1.15;margin:0 0 18px;color:#143238}
+.vip-leather #about .factory-v14-copy>p:not(.eyebrow){color:#304d50;line-height:1.75;max-width:50ch}
+#about .factory-v14-copy .btn{margin-top:12px;background:#123a40;color:#fff}
+.vip-leather .why{background:#dce9e8;color:#102a2e;margin-top:clamp(72px,8vw,118px);padding:clamp(64px,8vw,110px) 0}
+.vip-leather .why .eyebrow{color:#337882}
+.vip-leather .why h2{color:#102c31}
+.vip-leather .why h2 em{color:#31818a}
+.vip-leather .why .section-intro{color:#405e62}
+.vip-leather .why .benefits-v14{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;border:0}
+.vip-leather .benefits-v14 .benefit-v14{display:flex;flex-direction:column;background:#f9fbfa;border:1px solid #bfd3d1;border-radius:18px;padding:0;overflow:hidden;min-width:0;min-height:0;color:#173237}
+.benefit-v14-image{display:block;width:100%;height:195px;object-fit:cover}
+.benefit-v14-copy{padding:24px;min-width:0}
+.vip-leather .benefits-v14 .benefit-v14 span{color:#2a7e86;font-size:11px}
+.vip-leather .benefits-v14 .benefit-v14 h3{max-width:none;color:#143137;font-size:21px;line-height:1.2;margin:14px 0}
+.vip-leather .benefits-v14 .benefit-v14 p{max-width:none;margin:0;color:#3e585b;font-size:14px;line-height:1.7}
+#process .process-v14{display:block}
+#process .process-v14>.process-image{display:none}
+#process .process-v14 .process-steps{border:0;display:grid;gap:16px}
+.vip-leather #process .process-v14 .process-step{display:grid;grid-template-columns:35px minmax(0,1fr) minmax(190px,42%);align-items:center;gap:22px;text-align:left;padding:24px;background:#102d33;border:1px solid #315a5f;border-radius:20px;overflow:hidden;color:#ecf8f8}
+.vip-leather #process .process-v14 .process-step.active{background:#143b40;border-color:#6dbdc2;padding-left:24px}
+#process .process-v14 .process-step b{align-self:start;padding-top:4px;color:#84cbd1}
+#process .process-v14 .process-step span{min-width:0}
+.vip-leather #process .process-v14 .process-step strong{font-size:clamp(17px,2vw,23px);line-height:1.25}
+.vip-leather #process .process-v14 .process-step small{font-size:14px;line-height:1.65;margin-top:10px;max-width:38ch;color:#c8d8d9}
+#process .process-v14 .process-step .process-v14-image{width:auto;height:auto;max-width:100%;max-height:340px;justify-self:center;display:block;border-radius:12px}
+#process .process-v14 .process-step i{display:none}
+@media(max-width:900px){#about.factory{grid-template-columns:1fr}.vip-leather .why .benefits-v14{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){#about.factory{padding:22px;border-radius:20px}.vip-leather .why .benefits-v14{grid-template-columns:1fr}.benefit-v14-image{height:auto;max-height:290px;object-fit:cover}.vip-leather #process .process-v14 .process-step{grid-template-columns:28px minmax(0,1fr);gap:12px;padding:18px}.vip-leather #process .process-v14 .process-step.active{padding-left:18px}.vip-leather #process .process-v14 .process-step small{font-size:13px}.process-v14-image{grid-column:1 / -1;max-width:100%;max-height:none!important}}
+
+.process-v14-subtitle{font-size:clamp(1.05rem,1.6vw,1.3rem);font-weight:600;margin-top:18px;color:inherit}

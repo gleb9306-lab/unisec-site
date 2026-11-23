@@ -1,0 +1,21 @@
+/* Evenly space the three location benefits across their existing panel. */
+.vip-leather .locations-v14__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  column-gap: clamp(16px, 3vw, 36px);
+  row-gap: 14px;
+}
+.vip-leather .locations-v14__benefits span { min-width: 0; line-height: 1.4; }
+.vip-leather .locations-v14__benefits span:nth-child(2) { justify-self: center; }
+.vip-leather .locations-v14__benefits span:nth-child(3) { justify-self: end; }
+
+/* A simple gap separates the light benefits section from the statistics. */
+.vip-leather main > .numbers { margin-top: 0; border-top: clamp(54px, 6vw, 82px) solid #dce9e8; }
+.vip-leather main > .numbers::before { content: none; }
+
+@media (max-width: 600px) {
+  .vip-leather .locations-v14__benefits { grid-template-columns: 1fr; gap: 12px; }
+  .vip-leather .locations-v14__benefits span:nth-child(n) { justify-self: start; }
+  .vip-leather main > .numbers { border-top-width: 42px; }
+}

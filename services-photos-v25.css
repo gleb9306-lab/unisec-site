@@ -1,0 +1,30 @@
+/* Restored service photography cards. Images stay fully visible inside a shared card frame. */
+#category-list-v14.category-v14-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;width:100%;min-width:0;align-items:start}
+#category-list-v14 .category-v14{grid-column:auto;min-width:0;overflow:hidden;border:1px solid #c8dddd;border-radius:20px;background:#173c42;box-shadow:0 16px 36px rgba(19,57,62,.14)}
+#category-list-v14 .category-v14-summary{display:block;min-width:0}
+#category-list-v14 .category-v14-photo{display:flex;align-items:center;justify-content:center;aspect-ratio:3 / 2;min-height:220px;margin:0;padding:0;overflow:hidden;background:#e9f5f4}
+#category-list-v14 .category-v14-photo img{display:block;width:100%;height:100%;margin:0;object-fit:cover;object-position:center;transition:transform .35s ease}
+#category-list-v14 .category-v14-label{min-height:112px;padding:22px 60px 22px 22px}
+#category-list-v14 .category-v14-label strong{font-size:clamp(17px,1.3vw,21px);line-height:1.28}
+#category-list-v14 .category-v14-action{font-size:13px}
+#category-list-v14 .category-v14-panel{padding:0 22px 22px;background:#173c42}
+#category-list-v14 .category-v14-prices>div{gap:18px;align-items:start;padding:12px 0}
+#category-list-v14 .category-v14-prices dt{line-height:1.45}
+#category-list-v14 .category-v14-prices dd{max-width:48%;white-space:normal;line-height:1.35}
+#category-list-v14 .category-v14-order{margin-top:18px;max-width:250px}
+@media(max-width:1000px){#category-list-v14.category-v14-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+@media(max-width:640px){#category-list-v14.category-v14-grid{grid-template-columns:1fr;gap:16px}#category-list-v14 .category-v14-photo{aspect-ratio:3 / 2;min-height:0}#category-list-v14 .category-v14-label{min-height:96px;padding:18px 54px 18px 18px}#category-list-v14 .category-v14-panel{padding:0 18px 18px}#category-list-v14 .category-v14-order{max-width:none;width:100%}}
+@media(prefers-reduced-motion:reduce){#category-list-v14 .category-v14-photo img{transition:none}}
+
+/* Horizontal service carousel. The cards keep their details/price interaction while the list is swipeable. */
+.category-carousel{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;align-items:center;gap:14px;width:100%;min-width:0}
+.category-v14-grid{display:flex!important;gap:24px;align-items:stretch;width:100%;min-width:0;overflow-x:auto;overflow-y:hidden;padding:6px 4px 18px;scroll-snap-type:x mandatory;scroll-padding-inline:4px;overscroll-behavior-inline:contain;scrollbar-width:none}
+.category-v14-grid::-webkit-scrollbar{display:none}
+#category-list-v14 .category-v14{flex:0 0 calc((100% - 48px) / 3);grid-column:auto!important;scroll-snap-align:start}
+.category-carousel-arrow{display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #9fcacd;border-radius:50%;background:#f7fcfb;color:#1c626a;font-size:22px;line-height:1;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.category-carousel-arrow:hover:not(:disabled),.category-carousel-arrow:focus-visible:not(:disabled){background:#4f9ea7;border-color:#4f9ea7;color:#fff;transform:translateY(-1px)}
+.category-carousel-arrow:disabled{opacity:.3;cursor:default}
+.category-carousel-status{margin:2px auto 0;color:#627d81;font-size:12px;letter-spacing:.04em;text-align:center}
+@media(max-width:1000px){.category-carousel{grid-template-columns:42px minmax(0,1fr) 42px;gap:10px}.category-v14-grid{gap:18px}.category-v14-grid #category-list-v14 .category-v14,#category-list-v14 .category-v14{flex-basis:calc((100% - 18px) / 2)}}
+@media(max-width:640px){.category-carousel{position:relative;grid-template-columns:minmax(0,1fr);gap:8px}.category-carousel-arrow{position:absolute;z-index:2;top:calc(50% - 28px);width:38px;height:38px;font-size:18px;box-shadow:0 8px 18px rgba(19,57,62,.14)}.category-carousel-arrow--prev{left:8px}.category-carousel-arrow--next{right:8px}.category-v14-grid{gap:16px;padding-inline:2px}.category-v14-grid #category-list-v14 .category-v14,#category-list-v14 .category-v14{flex-basis:min(84vw,340px)}.category-carousel-status{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.category-v14-grid{scroll-behavior:auto}}

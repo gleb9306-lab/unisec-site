@@ -21,19 +21,7 @@ jobs:
       - name: Assemble static website
         run: |
           mkdir -p public
-          for part in site-v14-part-*.zip; do unzip -q "$part" -d public; done
-          unzip -oq site-v14-final.zip -d public
-          unzip -oq site-v15-final.zip -d public
-          unzip -oq site-v15-fixes.zip -d public
-          unzip -oq site-v15-count.zip -d public
-          unzip -oq site-v15-pages.zip -d public
-          unzip -oq site-v16.zip -d public
-          unzip -oq site-v17.zip -d public
-          unzip -oq site-v18.zip -d public
-          unzip -oq site-v19.zip -d public
-          unzip -oq site-v20-update.zip -d public
-          unzip -oq site-v21-update.zip -d public
-          unzip -oq site-v22-update.zip -d public
+          rsync -a --exclude='.git' --exclude='.github' --exclude='README.md' ./ public/
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -42,6 +30,3 @@ jobs:
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
-
-
-

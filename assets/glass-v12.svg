@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="none" fill="none">
+<defs>
+ <linearGradient id="sheet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4f9ea7" stop-opacity=".03"/><stop offset=".35" stop-color="#8bd4da" stop-opacity=".14"/><stop offset=".5" stop-color="#c8ebec" stop-opacity=".05"/><stop offset=".7" stop-color="#2e6973" stop-opacity=".18"/><stop offset="1" stop-color="#76bec5" stop-opacity=".02"/></linearGradient>
+ <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a4e1e4" stop-opacity=".02"/><stop offset=".28" stop-color="#b9e5e6" stop-opacity=".35"/><stop offset=".52" stop-color="#4f9ea7" stop-opacity=".08"/><stop offset=".78" stop-color="#c5ebea" stop-opacity=".3"/><stop offset="1" stop-color="#4f9ea7" stop-opacity=".02"/></linearGradient>
+ <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#aee3e6" stop-opacity="0"/><stop offset=".44" stop-color="#aee3e6" stop-opacity=".02"/><stop offset=".5" stop-color="#d0efed" stop-opacity=".24"/><stop offset=".57" stop-color="#6db4bd" stop-opacity=".07"/><stop offset="1" stop-color="#4f9ea7" stop-opacity="0"/></linearGradient>
+</defs>
+<path d="M-220 130C190-170 400 450 790 250S1310-180 1830 170L1830 420C1310 40 1210 640 750 460S240 20-220 380Z" fill="url(#sheet)"/>
+<path d="M-220 130C190-170 400 450 790 250S1310-180 1830 170" stroke="url(#rim)" stroke-width="3"/>
+<path d="M-220 143C190-157 400 463 790 263S1310-167 1830 183" stroke="url(#rim)" stroke-width="12" opacity=".24"/>
+<path d="M-250 570C100 950 360 120 780 510S1320 1020 1810 480L1810 750C1300 1160 1090 830 730 690S170 1130-250 790Z" fill="url(#shine)"/>
+<path d="M-250 570C100 950 360 120 780 510S1320 1020 1810 480" stroke="url(#rim)" stroke-width="3"/>
+<path d="M-250 584C100 964 360 134 780 524S1320 1034 1810 494" stroke="url(#rim)" stroke-width="16" opacity=".17"/>
+<path d="M-200 970C140 650 350 1170 820 890S1260 580 1810 900L1810 1220H-200Z" fill="url(#sheet)"/>
+<path d="M-200 970C140 650 350 1170 820 890S1260 580 1810 900" stroke="url(#rim)" stroke-width="2"/>
+</svg>

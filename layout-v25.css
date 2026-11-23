@@ -1,0 +1,459 @@
+/* Shared light layout rhythm for the full UNISEC page. */
+:root {
+  --page-max: 1280px;
+  --page-gutter: max(20px, calc((100vw - var(--page-max)) / 2));
+  --section-space: clamp(68px, 7vw, 108px);
+  --section-gap: 24px;
+}
+
+body {
+  background: #eef7f6;
+  color: #173e43;
+}
+
+main {
+  width: 100%;
+  overflow: visible;
+}
+
+main > .section.container,
+main > .experience-v14,
+main > .numbers,
+main > .why,
+main > .final-cta,
+main > .section-divider-v15 {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  box-sizing: border-box;
+}
+
+main > .section.container {
+  padding-inline: var(--page-gutter);
+  padding-block: var(--section-space);
+  overflow: visible;
+}
+
+main > .section.container > * {
+  min-width: 0;
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+main > .experience-v14,
+main > .why,
+main > .numbers,
+main > .final-cta {
+  padding-inline: var(--page-gutter);
+}
+
+main > .experience-v14 {
+  padding-block: var(--section-space);
+}
+
+main > .numbers {
+  margin-top: 0;
+  padding-block: 0;
+}
+
+main > .why {
+  margin-top: 0;
+  padding-block: var(--section-space);
+  overflow: visible;
+}
+
+main > .final-cta {
+  padding-block: 0;
+  overflow: visible;
+}
+
+.section-divider-v15 {
+  height: var(--section-gap);
+  background: #e4f1f0;
+  border-top: 1px solid #c9e0df;
+  border-bottom: 1px solid #c9e0df;
+  overflow: hidden;
+}
+
+.section-divider-v15::before,
+.section-divider-v15::after {
+  background: linear-gradient(90deg, transparent, #8fc6c9);
+}
+
+.section-divider-v15 i {
+  border-color: #4f9ea7;
+}
+
+.experience-v14-inner,
+.numbers-grid,
+.why > .container,
+.final-inner {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.section-head,
+.experience-v14-inner,
+.locations-v14__head {
+  min-width: 0;
+}
+
+.section-head {
+  align-items: flex-end;
+  gap: clamp(24px, 4vw, 64px);
+  margin-bottom: clamp(30px, 4vw, 52px);
+}
+
+.section-head > *,
+.experience-v14-inner > *,
+.locations-v14__head > * {
+  min-width: 0;
+}
+
+.section-head h2,
+.locations-v14__head h2,
+.experience-v14 h2,
+.why h2,
+.final-cta h2,
+.faq-v14 h2 {
+  overflow-wrap: anywhere;
+}
+
+.factory-image,
+.about-image,
+.process-image,
+.before-after,
+.category-v14,
+.review-card,
+.locations-v14__directory,
+.locations-v14__map-wrap {
+  box-shadow: 0 12px 30px rgba(27, 76, 80, .08);
+}
+
+.factory-image img,
+.about-image img,
+.process-image img,
+.process-v14-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.factory-image,
+.about-image,
+.process-image {
+  height: auto;
+  overflow: hidden;
+}
+
+.about-image span,
+.factory-image span,
+.process-image span {
+  position: static;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+  overflow-wrap: anywhere;
+}
+
+.process-layout {
+  align-items: start;
+}
+
+.process-layout .process-image {
+  max-width: 100%;
+}
+
+#about.factory {
+  width: min(100%, var(--page-max));
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+#process .process-v14 .process-step .process-v14-image {
+  width: 100%;
+  height: 280px;
+  max-height: none;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  background: #eaf5f5;
+}
+
+.process-layout .process-image img {
+  aspect-ratio: auto;
+}
+
+#process .process-v14 .process-step .process-v14-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 340px;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.services-v23-panel .category-v14-prices > div,
+.category-v14-prices > div {
+  grid-template-columns: minmax(0, 1fr) minmax(92px, auto);
+}
+
+.services-v23-panel .category-v14-prices dd,
+.category-v14-prices dd {
+  width: auto;
+  min-width: 0;
+  max-width: 45%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.reviews-v19-stage {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 900px) 52px;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(12px, 3vw, 34px);
+}
+
+.reviews-v19-stage > .review-card {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+.reviews-v19-stage > .review-arrow {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid #9fcacd;
+  border-radius: 50%;
+  background: #f7fcfb;
+  color: #1c626a;
+  font-size: 22px;
+  line-height: 1;
+  justify-self: center;
+}
+
+.reviews-v19-stage > .review-arrow:hover,
+.reviews-v19-stage > .review-arrow:focus-visible {
+  background: #4f9ea7;
+  color: #fff;
+}
+
+.reviews-v19-stage > #prev-review { grid-column: 1; }
+.reviews-v19-stage > .review-card { grid-column: 2; grid-row: 1; }
+.reviews-v19-stage > #next-review { grid-column: 3; }
+
+.reviews-v14-foot,
+.comparison-footer {
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.locations-v14 {
+  padding-block: 0;
+}
+
+.locations-v14__layout {
+  align-items: start;
+}
+
+.locations-v14__directory {
+  height: auto;
+  min-height: 0;
+  align-self: start;
+}
+
+.locations-v14__list {
+  max-height: none;
+  overflow: visible;
+}
+
+.locations-v14__map-wrap {
+  min-height: 0;
+  height: 520px;
+}
+
+.locations-v14__map {
+  height: 520px;
+  min-height: 0;
+}
+
+.faq-v14 {
+  padding-block: 0 !important;
+}
+
+.faq-v14 > .section-head,
+.faq-v14 > .faq-v14-list {
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.faq-v14 > .section-head {
+  margin-bottom: clamp(30px, 4vw, 52px);
+}
+
+@media (max-width: 900px) {
+  :root { --page-gutter: 24px; }
+  main > .section.container { padding-block: 64px; }
+  .section-head { align-items: flex-start; }
+  .reviews-v19-stage { grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 8px; }
+  .reviews-v19-stage > .review-arrow { width: 42px; height: 42px; }
+  .locations-v14__map-wrap { height: 420px; }
+  .locations-v14__map { height: 420px; }
+  #process .process-v14 .process-step .process-v14-image { height: 240px; }
+}
+
+@media (max-width: 640px) {
+  :root { --page-gutter: 20px; }
+  main > .section.container { padding-block: 52px; }
+  .section-head { gap: 18px; margin-bottom: 30px; }
+  .reviews-v19-stage { grid-template-columns: 34px minmax(0, 1fr) 34px; gap: 5px; }
+  .reviews-v19-stage > .review-arrow { width: 34px; height: 34px; font-size: 18px; }
+  .reviews-v19-stage > .review-card { padding-inline: 20px; }
+  .locations-v14__map-wrap { height: 360px; }
+  .locations-v14__map { height: 360px; }
+  #about.factory { width: 100%; padding-inline: 0; }
+  #process .process-v14 .process-step .process-v14-image { height: auto; aspect-ratio: 16 / 10; }
+}
+
+/* Keep portrait before/after examples inside a predictable frame. */
+.before-after {
+  width: 100%;
+  max-width: min(100%, calc(680px * var(--photo-ratio, .8)));
+  aspect-ratio: var(--photo-ratio, .8);
+  height: auto;
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .before-after {
+    max-width: min(100%, calc(520px * var(--photo-ratio, .8)));
+  }
+}
+
+/* Keep the factory panel aligned with the shared page column. */
+#about.factory {
+  width: min(var(--page-max), calc(100% - (2 * var(--page-gutter))));
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: clamp(24px, 4vw, 56px);
+}
+
+/* Every process step uses one stable image frame. */
+#process .process-v14 .process-step {
+  min-height: 340px;
+}
+
+#process .process-v14 .process-step .process-v14-image {
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  max-height: none;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+  justify-self: stretch;
+}
+
+@media (max-width: 900px) {
+  #process .process-v14 .process-step {
+    min-height: 0;
+  }
+
+  #process .process-v14 .process-step .process-v14-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 640px) {
+  #about.factory {
+    width: calc(100% - (2 * var(--page-gutter)));
+  }
+
+  #process .process-v14 .process-step .process-v14-image {
+    height: 220px;
+  }
+}
+
+/* Keep the horizontally swipeable services track inside the viewport. */
+main{min-width:0;overflow-x:hidden}
+.category-carousel{min-width:0;overflow:hidden}
+
+/* Final visual alignment for the restored photo sequence. */
+main > .section.container,
+main > .why { padding-block: clamp(64px, 7vw, 96px); }
+#about.factory { margin-bottom: 0; border: 1px solid #b8d9dc; box-shadow: 0 10px 24px rgba(27,76,80,.08); border-radius: 20px; }
+.why { margin-top: 0; border-top: 1px solid #d1e4e3; }
+.why .benefits-v14 { gap: 18px; align-items: stretch; }
+.why .benefit-v14 { border: 1px solid #b8d9dc; border-radius: 18px; box-shadow: 0 10px 24px rgba(27,76,80,.08); }
+.why .benefit-v14-image { width: 100%; height: 195px; aspect-ratio: auto; object-fit: cover; display: block; }
+.why .benefit-v14-copy { padding: 24px; min-height: 190px; }
+#process .process-v14 .process-step { min-height: 340px; padding: 24px; gap: 22px; border: 1px solid #b8d9dc; box-shadow: 0 10px 24px rgba(27,76,80,.08); }
+#process .process-v14 .process-step .process-v14-image { width: 100%; height: 300px; aspect-ratio: 3 / 2; max-height: none; object-fit: cover; object-position: center; border-radius: 12px; }
+@media (max-width: 900px) {
+  #process .process-v14 .process-step { min-height: 300px; }
+}
+@media (max-width: 640px) {
+  #about.factory { border-radius: 18px; }
+  .why .benefit-v14-copy { padding: 20px; min-height: 0; }
+  #process .process-v14 .process-step { min-height: 0; padding: 18px; gap: 12px; }
+  #process .process-v14 .process-step .process-v14-image { height: 220px; aspect-ratio: 3 / 2; }
+}
+
+/* Final contrast and rhythm pass for the benefit, statistics and reviews blocks. */
+.why .benefits-v14 .benefit-v14 {
+  border: 2px solid #8bc3c6;
+  background: #ffffff;
+  box-shadow: 0 12px 26px rgba(27, 76, 80, .12);
+}
+.why .benefits-v14 .benefit-v14:last-child {
+  border-color: #4f9ea7;
+  box-shadow: 0 14px 30px rgba(27, 76, 80, .16);
+}
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  padding-block: clamp(46px, 5vw, 68px);
+}
+.numbers-grid > div {
+  min-height: 132px;
+  padding: 22px 20px;
+  border: 2px solid #9fcacd;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .78);
+  box-shadow: 0 10px 22px rgba(27, 76, 80, .08);
+}
+.numbers-grid > div strong { line-height: 1; }
+.numbers-grid > div span { margin-top: 14px; }
+.reviews-v19-stage > .review-card,
+.review-card {
+  border: 2px solid #8bc3c6;
+  background: #ffffff;
+  box-shadow: 0 14px 30px rgba(27, 76, 80, .12);
+}
+.reviews-v19-stage > .review-card { border-color: #4f9ea7; }
+.reviews-v14-foot { padding-top: 16px; }
+
+@media (max-width: 900px) {
+  .numbers-grid { gap: 14px; padding-block: 44px; }
+  .numbers-grid > div { min-height: 122px; padding: 18px 16px; }
+}
+@media (max-width: 640px) {
+  .numbers-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding-block: 34px; }
+  .numbers-grid > div { min-height: 112px; padding: 16px 14px; border-radius: 14px; }
+  .numbers-grid strong { font-size: clamp(40px, 12vw, 58px); }
+  .numbers-grid span { font-size: 11px; }
+  .why .benefits-v14 .benefit-v14 { border-width: 2px; }
+  .reviews-v19-stage > .review-card { border-width: 2px; }
+}

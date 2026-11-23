@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1060" viewBox="0 0 900 1060" fill="none">
+<defs>
+ <radialGradient id="body" cx=".35" cy=".28" r=".8"><stop stop-color="#8cdbe0" stop-opacity=".24"/><stop offset=".35" stop-color="#36767e" stop-opacity=".2"/><stop offset=".68" stop-color="#122a31" stop-opacity=".06"/><stop offset=".9" stop-color="#4b9199" stop-opacity=".16"/><stop offset="1" stop-color="#d0f4f3" stop-opacity=".28"/></radialGradient>
+ <linearGradient id="rim" x1="140" y1="100" x2="710" y2="950" gradientUnits="userSpaceOnUse"><stop stop-color="#d8faf6" stop-opacity=".02"/><stop offset=".35" stop-color="#97dadd" stop-opacity=".18"/><stop offset=".56" stop-color="#d5f3f1" stop-opacity=".65"/><stop offset=".64" stop-color="#51a3ad" stop-opacity=".12"/><stop offset=".84" stop-color="#d3edeb" stop-opacity=".5"/><stop offset="1" stop-color="#80ced4" stop-opacity=".01"/></linearGradient>
+ <linearGradient id="fold" x1="130" y1="510" x2="700" y2="920" gradientUnits="userSpaceOnUse"><stop stop-color="#c7eeec" stop-opacity="0"/><stop offset=".38" stop-color="#8fd6dd" stop-opacity=".05"/><stop offset=".52" stop-color="#d3f1f0" stop-opacity=".25"/><stop offset=".58" stop-color="#76c4cc" stop-opacity=".03"/><stop offset=".9" stop-color="#9bdde2" stop-opacity=".17"/><stop offset="1" stop-color="#7dc5ce" stop-opacity="0"/></linearGradient>
+</defs>
+<path d="M105 276C133 84 315 37 523 82C755 132 847 335 800 566C769 717 748 875 582 949C386 1037 167 905 111 725C63 568 77 463 105 276Z" fill="url(#body)" stroke="url(#rim)" stroke-width="2"/>
+<path d="M103 487C207 594 377 566 561 674C682 746 704 862 580 943C414 1028 206 922 143 774C102 678 101 582 103 487Z" fill="url(#fold)"/>
+<path d="M104 488C233 610 409 557 564 677C666 756 695 833 611 921" stroke="url(#rim)" stroke-width="3"/>
+<path d="M114 502C243 620 403 569 555 685C661 766 675 846 592 927" stroke="#a0e0e3" stroke-opacity=".1" stroke-width="9"/>
+<path d="M154 746C206 899 390 999 565 948" stroke="url(#rim)" stroke-width="6"/>
+<path d="M148 259C169 130 329 85 463 112" stroke="url(#rim)" stroke-width="5"/>
+</svg>

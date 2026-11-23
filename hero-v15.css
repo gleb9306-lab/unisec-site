@@ -1,0 +1,13 @@
+/* Customer's wide factory image fills the introductory section. */
+.vip-leather .hero.container{position:relative;isolation:isolate;width:100%;max-width:none;min-height:clamp(680px,100svh,950px);padding:130px max(48px,calc((100vw - 1280px)/2)) 56px;display:flex;align-items:center;overflow:hidden;background:#17383c url('assets/images/hero-factory-v15.jpeg') center center/cover no-repeat}
+.vip-leather .hero.container::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,28,32,.94) 0%,rgba(5,28,32,.8) 32%,rgba(5,28,32,.25) 65%,rgba(5,28,32,.08) 100%);pointer-events:none}
+.vip-leather .hero .hero-copy{width:min(100%,520px);position:relative;z-index:1}
+.vip-leather .hero .hero-visual{display:none}
+@media(max-width:900px){
+ .vip-leather .hero.container{min-height:660px;padding:112px 24px 48px;background-position:61% center}
+ .vip-leather .hero.container::before{background:linear-gradient(90deg,rgba(5,28,32,.89),rgba(5,28,32,.52))}
+}
+@media(max-width:640px){
+ .vip-leather .hero.container{min-height:650px;padding:100px 20px 40px;background-position:68% center}
+ .vip-leather .hero.container::before{background:rgba(5,28,32,.53)}
+}
