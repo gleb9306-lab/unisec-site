@@ -6,7 +6,7 @@
     delicate: 'assets/images/customer-2026/02-clothes-rack.webp',
     equipment: 'assets/images/customer-2026/12-industrial-machines.webp',
     steam: 'assets/images/customer-2026/14-garment-treatment.webp',
-    chemistry: 'assets/images/customer-2026/16-chemistry-workspace.webp',
+    chemistry: 'assets/images/customer-2026/09-facade.webp',
     ironing: 'assets/images/customer-2026/15-factory-floor.webp',
     finished: 'assets/images/customer-2026/07-covered-garments-detail.webp'
   };
@@ -104,3 +104,4 @@
     if (caption) caption.textContent = steps[0][0];
   }
 })();
+
